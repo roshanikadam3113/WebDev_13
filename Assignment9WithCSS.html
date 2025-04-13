@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef1f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+            color: #2c3e50;
+        }
+
+        table {
+            margin-top: 30px;
+        }
+
+        fieldset {
+            border: 2px solid #2980b9;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        legend {
+            font-weight: bold;
+            color: #2980b9;
+            font-size: 1.2rem;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            padding: 8px;
+            width: 60%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            margin-left: 10px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1f6391;
+        }
+
+        @media (max-width: 600px) {
+            label {
+                width: 100%;
+            }
+
+            input[type="text"],
+            input[type="number"] {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment No.9</h1>
+
+    <table width="30%" border="0">
+        <tr>
+            <td align="center" valign="middle">
+                <fieldset>
+                    <legend><b>Employee Details</b></legend>
+                    <form action="server">
+                        <label>First Name:</label>
+                        <input type="text" name="first_name" placeholder="First Name">
+                        <br><br>
+
+                        <label>Last Name:</label>
+                        <input type="text" name="last_name" placeholder="Last Name">
+                        <br><br>
+
+                        <label>Select your Gender:</label>
+                        <input type="radio" name="gender" id="Male" value="Male">
+                        <label for="Male">Male</label>
+                        <input type="radio" name="gender" id="Female" value="Female">
+                        <label for="Female">Female</label>
+                        <input type="radio" name="gender" id="Other" value="Other">
+                        <label for="Other">Other</label>
+                        <br><br>
+
+                        <label>Employee ID:</label>
+                        <input type="number" name="employee_id" placeholder="Employee ID">
+                        <br><br>
+
+                        <label>Designation:</label>
+                        <input type="text" name="destination" placeholder="Designation">
+                        <br><br>
+
+                        <label>Phone Number:</label>
+                        <input type="number" name="phone" placeholder="Phone Number">
+                        <br><br>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
